@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AMXBaseConverter));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.tbNumIn = new System.Windows.Forms.TextBox();
@@ -101,7 +102,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 62);
+            this.label3.Location = new System.Drawing.Point(3, 70);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 21);
             this.label3.TabIndex = 4;
@@ -111,7 +112,7 @@
             // 
             this.cbToBase.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbToBase.FormattingEnabled = true;
-            this.cbToBase.Location = new System.Drawing.Point(117, 65);
+            this.cbToBase.Location = new System.Drawing.Point(117, 73);
             this.cbToBase.Name = "cbToBase";
             this.cbToBase.Size = new System.Drawing.Size(155, 29);
             this.cbToBase.TabIndex = 5;
@@ -119,7 +120,7 @@
             // btnConvert
             // 
             this.btnConvert.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConvert.Location = new System.Drawing.Point(3, 92);
+            this.btnConvert.Location = new System.Drawing.Point(3, 108);
             this.btnConvert.Name = "btnConvert";
             this.btnConvert.Size = new System.Drawing.Size(269, 50);
             this.btnConvert.TabIndex = 6;
@@ -131,7 +132,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 145);
+            this.label4.Location = new System.Drawing.Point(3, 161);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 21);
             this.label4.TabIndex = 7;
@@ -140,7 +141,7 @@
             // tbNumOut
             // 
             this.tbNumOut.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNumOut.Location = new System.Drawing.Point(114, 148);
+            this.tbNumOut.Location = new System.Drawing.Point(114, 164);
             this.tbNumOut.Name = "tbNumOut";
             this.tbNumOut.Size = new System.Drawing.Size(158, 29);
             this.tbNumOut.TabIndex = 8;
@@ -149,7 +150,7 @@
             // 
             this.linkCopyright.AutoSize = true;
             this.linkCopyright.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkCopyright.Location = new System.Drawing.Point(3, 180);
+            this.linkCopyright.Location = new System.Drawing.Point(3, 196);
             this.linkCopyright.Name = "linkCopyright";
             this.linkCopyright.Size = new System.Drawing.Size(193, 21);
             this.linkCopyright.TabIndex = 9;
@@ -164,6 +165,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 229);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AMXBaseConverter";
             this.Text = "AMX Base Converter";
             this.Load += new System.EventHandler(this.AMXBaseConverter_Load);

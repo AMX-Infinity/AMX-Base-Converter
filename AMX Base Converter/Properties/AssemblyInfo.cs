@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("AMX Base Converter")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Convert numbers between bases.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("AMX Infinity")]
 [assembly: AssemblyProduct("AMX Base Converter")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("©  2016 Afaan Bilal, AMX Infinity")]
+[assembly: AssemblyTrademark("AMX Infinity")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
