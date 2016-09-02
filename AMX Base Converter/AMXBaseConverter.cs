@@ -28,7 +28,7 @@ namespace AMX_Base_Converter
 
         private void AMXBaseConverter_Load(object sender, EventArgs e)
         {
-            for (int i = 2; i < 10; i++)
+            for (int i = 2; i <= 10; i++)
             {
                 cbFromBase.Items.Add(i);
                 cbToBase.Items.Add(i);
