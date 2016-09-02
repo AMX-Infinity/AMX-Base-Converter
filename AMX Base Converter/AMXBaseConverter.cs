@@ -79,7 +79,18 @@ namespace AMX_Base_Converter
                 return;
             }
 
-            tbNumOut.Text = base_convert(number, short.Parse(cbFromBase.SelectedItem.ToString()), short.Parse(cbToBase.SelectedItem.ToString())).ToString();
+            short fb, tb;
+            if (cbFromBase.SelectedItem == null || cbToBase.SelectedItem == null ||
+                !short.TryParse(cbFromBase.SelectedItem.ToString(), out fb) ||
+                !short.TryParse(cbToBase.SelectedItem.ToString(), out tb) ||
+                fb < 2 || fb > 10 ||
+                tb < 2 || tb > 10)
+            {
+                MessageBox.Show("Please select a proper base from the list.", "AMX Base Converter");
+                return;
+            }
+
+            tbNumOut.Text = base_convert(number, fb, tb).ToString();
         }
         
         private void linkCopyright_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
