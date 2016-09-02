@@ -58,7 +58,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(284, 229);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(277, 229);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -163,9 +163,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 229);
+            this.ClientSize = new System.Drawing.Size(277, 229);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(293, 268);
             this.Name = "AMXBaseConverter";
             this.Text = "AMX Base Converter";
             this.Load += new System.EventHandler(this.AMXBaseConverter_Load);
