@@ -167,6 +167,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(293, 268);
             this.MinimumSize = new System.Drawing.Size(293, 268);
             this.Name = "AMXBaseConverter";
             this.Text = "AMX Base Converter";
