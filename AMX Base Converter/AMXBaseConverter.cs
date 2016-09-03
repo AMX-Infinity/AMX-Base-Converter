@@ -35,39 +35,24 @@ namespace AMX_Base_Converter
             }
         }
 
-        private string base_convert(string number, int fromBase, int toBase)
+        long base_convert(long number, short fromBase, short toBase)
         {
-            StringBuilder res = new StringBuilder();
-            long n = Int32.Parse(number);
-            if (fromBase > toBase)
+            if (fromBase != 10 && toBase != 10) throw new NotImplementedException();
+            long result = 0;
+            int i = 0;
+
+            while (number > 0)
             {
-                while (n > 0)
-                {
-                    res.Append((char)(n % toBase + '0'));
-                    n /= toBase;
-                }
-                string r = res.ToString();
-                char[] cr = r.ToCharArray();
-                Array.Reverse(cr);
-                StringBuilder rcb = new StringBuilder();
-                foreach (char c in cr)
-                    rcb.Append(c);
-                return rcb.ToString();
+                result += (number % toBase) * (long)Math.Pow(fromBase, i++);
+                number /= toBase;
             }
-            else
-            {
-                long ret = 0;
-                for (int i = number.Length - 1, j = 0; i >= 0; i--, j++)
-                    ret += (int)(number[i] - '0') * (int)Math.Pow((double)fromBase, (double)j);
-                res.Append(ret);
-            }
-            return res.ToString();
+
+            return result;
         }
-        
-        private long base_convert(long number, short fromBase, short toBase)
+                
+        private long convert(long number, short fromBase, short toBase)
         {
-            string toTen = base_convert(number.ToString(), fromBase, 10);
-            return long.Parse(base_convert(toTen, 10, toBase));
+            return base_convert(base_convert(number, fromBase, 10), 10, toBase);
         }
 
         private void btnConvert_Click(object sender, EventArgs e)
@@ -90,7 +75,7 @@ namespace AMX_Base_Converter
                 return;
             }
 
-            tbNumOut.Text = base_convert(number, fb, tb).ToString();
+            tbNumOut.Text = convert(number, fb, tb).ToString();
         }
         
         private void linkCopyright_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
