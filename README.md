@@ -1,11 +1,7 @@
 AMX Base Converter
 ==============
 
-Author: **Afaan Bilal ([@AfaanBilal](https://github.com/AfaanBilal))**   
-Author URL: **[Google+](https://google.com/+AfaanBilal)**
-
-[AMX Infinity](https://www.amxinfinity.ml)  
-[Afaan Bilal](https://afaan.ml)
+Author: **[Afaan Bilal](https://afaan.dev)** 
 
 ## Introduction
 **AMX Base Converter** is a windows application that converts numbers between bases. 
